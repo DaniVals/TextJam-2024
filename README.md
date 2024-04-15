@@ -1,11 +1,17 @@
-# TextJam-2024
+# On the edge of the recicle bin
+Mi juego hecho para la game jam https://itch.io/jam/text-jam-1
+
+## How to play
+- dowload the 'game' folder
+- open the proyect in vscode
+- run the Main.java
+- play it on the terminal :D
+
+# Al borde de la papelera
 Mi juego hecho para la game jam https://itch.io/jam/text-jam-1
 
 ## Como jugar
-- descarga el Main.java
-- copialo dentro de un proyecto de java (no hace falta ningun tipo de paquete especifico)
+- descarga la carpeta 'game'
+- abre el proyecto en vscode
+- abre el Main.java
 - juega en el terminal :D
-## How to play
-- dowload el Main.java
-- copy it in a java proyect (no need of any package)
-- play it on the terminal :D
