@@ -14,43 +14,43 @@ public class Main {
 		teclado = new Scanner(System.in);
 		Question[] preguntas = {
 			new Question(
-				"enunciado 1",
-				"respuesta1",
-				"respuesta2", 
-				"respuesta3", 
-				"resouesta4",
-				"enuntiate",
-				"anwser1",
-				"anwser2",
-				"anwser3",
-				"anwser4",
-				1
+				"¿Que extension de archivo indica que un archivo es ejecutable en Windows?",
+				".pdf",
+				".mp4", 
+				".wav",
+				".exe", 
+				"What file extension is used in executable Windows files?",
+				".pdf",
+				".mp4",
+				".wav",
+				".exe",
+				4
 			),
 			new Question(
-				"enunciado 2",
-				"respuesta1",
-				"respuesta2", 
-				"respuesta3", 
-				"resouesta4",
+				"¿Cuando se fundo itch.io?",
+				"2011",
+				"2012", 
+				"2013", 
+				"2014",
 				"enuntiate",
-				"anwser1",
-				"anwser2",
-				"anwser3",
-				"anwser4",
-				2
-			),
-			new Question(
-				"enunciado 3",
-				"respuesta1",
-				"respuesta2", 
-				"respuesta3", 
-				"resouesta4",
-				"enuntiate",
-				"anwser1",
-				"anwser2",
-				"anwser3",
-				"anwser4",
+				"2011",
+				"2012",
+				"2013",
+				"2014",
 				3
+			),
+			new Question(
+				"¿Quien es considerado el padre de la computacion?",
+				"Alan Turing", 
+				"Bill Gates",
+				"Steve Jobs", 
+				"Videosboy",
+				"Who is considered the father of the computer?",
+				"Alan Turing",
+				"Bill Gates",
+				"Steve Jobs",
+				"Videosboy",
+				1
 			)
 		};
 

@@ -224,14 +224,13 @@ public class Dialogue {
 
                 System.out.print(textReset);
                 System.out.print(textVerde);
-                System.out.println("");
                 System.out.println("Na, not really...");
                 Thread.sleep(MEDIUM_PAUSE);
                 System.out.println("I can only acces your PC :D");
                 Thread.sleep(MEDIUM_PAUSE);
                 System.out.println("Which brings us to the theme of the contest.");
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println("Pepeat with me:");
+                System.out.println("Repeat with me:");
                 Thread.sleep(MEDIUM_PAUSE);
 
                     System.out.print(textAmarillo);
@@ -239,7 +238,7 @@ public class Dialogue {
                     Thread.sleep(MEDIUM_PAUSE);
                     System.out.print(textVerde);
 
-                System.out.println("That's true, my dear executor >:)");
+                System.out.println("That's true, my dear runner >:)");
                 Thread.sleep(MEDIUM_PAUSE);
                 System.out.println("In this game I have access to your storage memory");
                 Thread.sleep(MEDIUM_PAUSE);
@@ -294,7 +293,6 @@ public class Dialogue {
 
                 System.out.print(textReset);
                 System.out.print(textVerde);
-                System.out.println("");
                 System.out.println("Na, en verdad no...");
                 Thread.sleep(MEDIUM_PAUSE);
                 System.out.println("Solo puedo acceder a tu PC :D");
@@ -340,80 +338,80 @@ public class Dialogue {
         System.out.println();
         switch (idioma) {
             default:
-            case ENG: // TODO
+            case ENG:
                 System.out.print(textBold+textVerde);
                 System.out.println("    ==== First Question ===");
                 System.out.print(textReset);
                 System.out.print(textVerde);
                 Thread.sleep(MEDIUM_PAUSE);
                 
-                System.out.println("Para esta pregunta no necesitara un archivo excesivamente grande");
+                System.out.println("For this question, i won't need a very large file");
                 Thread.sleep(MEDIUM_PAUSE);
                 
                 System.out.print(textAmarillo);
-                System.out.println("Con 1KB me bastara");
+                System.out.println("1KB is enough");
                 
                 System.out.print(textCyan);
-                archivo = FileManager.pedirArchivo(Main.teclado, 1024, textCyan, false);
+                archivo = FileManager.nextFile(Main.teclado, 1024, textCyan, false);
                 
                 System.out.print(textVerde);
-                System.out.println("Archivo guardado en memoria ram");
+                System.out.println("File saved in memory");
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textRojo);
-                System.out.println("Ya no hay vuelta atras");
+                System.out.println("There's no going back");
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textVerde);
-                System.out.println("Pasemos con la pregunta");
+                System.out.println("Let's start with the question");
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textAmarillo);
                 System.out.print(textBold);
-                System.out.println(pregunta.getESPenunciado());
+                System.out.println(pregunta.getENGenunciado());
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textReset);
                 System.out.print(textAmarillo);
-                System.out.println(pregunta.getESPrespuesta1());
+                System.out.println(pregunta.getENGrespuesta1());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta2());
+                System.out.println(pregunta.getENGrespuesta2());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta3());
+                System.out.println(pregunta.getENGrespuesta3());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta4());
+                System.out.println(pregunta.getENGrespuesta4());
                 Thread.sleep(MEDIUM_PAUSE);
 
-                if (FileManager.pedirRespuesta(pregunta, Main.teclado, textCyan)) {
+                if (FileManager.nextAnswer(pregunta, Main.teclado, textCyan)) {
                     Dialogue.fuentePresentador();
-                    System.out.println("Respuesta correcta");
+                    System.out.println("Correct answer");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Menos mal");
+                    System.out.println("Well done");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Aunque no serias el unico que falla en la primera");
+                    System.out.println("Although you wouldn't be the first to lose the start");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Siguiente pregunta!!");
+                    System.out.println("Next question!!");
                     Thread.sleep(MEDIUM_PAUSE);
                     return true;
                 }else{
                     archivo.delete();
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Malas noticias");
+                    System.out.println("Bad news");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuenteError();
-                    System.out.println("Usted ha fallado la pregunta");
+                    System.out.println("You have answered wrong");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Pense que ibas a durar mas...");
+                    System.out.println("I thought you were going to last longer...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Bueno");
+                    System.out.println("Well...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Pues despidete de tu archivo");
+                    System.out.println("Say goodbye to your file");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Espero que no fuese nada importante ;)");
+                    System.out.println("I hope it wasnt anything important ;)");
                     Thread.sleep(MEDIUM_PAUSE);
                     return false;
                 }
@@ -486,7 +484,7 @@ public class Dialogue {
                     Dialogue.fuentePresentador();
                     System.out.println("Pense que ibas a durar mas...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Bueno");
+                    System.out.println("Bueno...");
                     Thread.sleep(MEDIUM_PAUSE);
                     System.out.println("Pues despidete de tu archivo");
                     Thread.sleep(MEDIUM_PAUSE);
@@ -501,79 +499,79 @@ public class Dialogue {
         System.out.println();
         switch (idioma) {
             default:
-            case ENG: //TODO
+            case ENG:
                 System.out.print(textBold+textVerde);
                 System.out.println("    ==== Second Question ===");
                 System.out.print(textReset);
                 System.out.print(textVerde);
                 Thread.sleep(MEDIUM_PAUSE);
                 
-                System.out.println("Para esta pregunta necesitare un archivo mas grande");
+                System.out.println("For this question i would need a larger file");
                 Thread.sleep(MEDIUM_PAUSE);
                 
                 System.out.print(textAmarillo);
-                System.out.println("Con 64KB me bastara");
+                System.out.println("With 64KB is enough");
                 
                 System.out.print(textCyan);
-                archivo = FileManager.pedirArchivo(Main.teclado, 1042*64, textCyan, false);
+                archivo = FileManager.nextFile(Main.teclado, 1042*64, textCyan, false);
                 
                 System.out.print(textVerde);
-                System.out.println("Archivo guardado en memoria ram");
+                System.out.println("File saved in memory");
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println("Pasemos con la pregunta");
+                System.out.println("Let's get to that questions");
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textAmarillo);
                 System.out.print(textBold);
-                System.out.println(pregunta.getESPenunciado());
+                System.out.println(pregunta.getENGenunciado());
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textReset);
                 System.out.print(textAmarillo);
-                System.out.println(pregunta.getESPrespuesta1());
+                System.out.println(pregunta.getENGrespuesta1());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta2());
+                System.out.println(pregunta.getENGrespuesta2());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta3());
+                System.out.println(pregunta.getENGrespuesta3());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta4());
+                System.out.println(pregunta.getENGrespuesta4());
                 Thread.sleep(MEDIUM_PAUSE);
 
-                if (FileManager.pedirRespuesta(pregunta, Main.teclado, textCyan)) {
+                if (FileManager.nextAnswer(pregunta, Main.teclado, textCyan)) {
                     Dialogue.fuentePresentador();
-                    System.out.println("Respuesta acertada por segunda vez consecutiva");
+                    System.out.println("Correct answer once again");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Como te sientes?");
+                    System.out.println("How are you feeling?");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     System.out.print(textAzul);
                     Main.teclado.nextLine();
 
                     System.out.print(textVerde);
-                    System.out.println("Espero que bien porque no se reconocer texto :v");
+                    System.out.println("I hope well because i can recognize text :v");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Siguiente pregunta!!");
+                    System.out.println("Next question!!");
                     Thread.sleep(MEDIUM_PAUSE);
                     return true;
                 }else{
                     archivo.delete();
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Malas noticias");
+                    System.out.println("Bad news");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuenteError();
-                    System.out.println("Usted ha fallado la pregunta");
+                    System.out.println("You have answered wrong");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Solo necesitabas una mas...");
+                    System.out.println("You were so close...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Pero bueno");
+                    System.out.println("Well...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Te toca despedirte de tu archivo");
+                    System.out.println("Say goodbye to your file");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Espero que no fuese nada importante ;)");
+                    System.out.println("I hope it wasnt anything important ;)");
                     Thread.sleep(MEDIUM_PAUSE);
                     return false;
                 }
@@ -643,7 +641,7 @@ public class Dialogue {
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Solo necesitabas una mas...");
+                    System.out.println("Estabas tan cerca...");
                     Thread.sleep(MEDIUM_PAUSE);
                     System.out.println("Pero bueno");
                     Thread.sleep(MEDIUM_PAUSE);
@@ -660,86 +658,86 @@ public class Dialogue {
         System.out.println();
         switch (idioma) {
             default:
-            case ENG: // TODO
+            case ENG:
                 System.out.print(textBold+textVerde);
                 System.out.println("    ==== Third Question ===");
                 System.out.print(textReset);
                 System.out.print(textVerde);
                 Thread.sleep(MEDIUM_PAUSE);
                 
-                System.out.println("Para esta pregunta necesitare una extension en especifico");
+                System.out.println("For this one i need an specific file");
                 Thread.sleep(MEDIUM_PAUSE);
                 
                 System.out.print(textAmarillo);
-                System.out.println("Necesitare un png");
+                System.out.println("I'll need a png");
                 
                 System.out.print(textCyan);
-                archivo = FileManager.pedirArchivo(Main.teclado, 100, textCyan, true);
+                archivo = FileManager.nextFile(Main.teclado, 100, textCyan, true);
                 
                 System.out.print(textVerde);
-                System.out.println("Archivo guardado en memoria ram");
+                System.out.println("File saved in memory");
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println("Pasemos con la pregunta");
+                System.out.println("Roll in that question");
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textAmarillo);
                 System.out.print(textBold);
-                System.out.println(pregunta.getESPenunciado());
+                System.out.println(pregunta.getENGenunciado());
                 Thread.sleep(MEDIUM_PAUSE);
 
                 System.out.print(textReset);
                 System.out.print(textAmarillo);
-                System.out.println(pregunta.getESPrespuesta1());
+                System.out.println(pregunta.getENGrespuesta1());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta2());
+                System.out.println(pregunta.getENGrespuesta2());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta3());
+                System.out.println(pregunta.getENGrespuesta3());
                 Thread.sleep(MEDIUM_PAUSE);
-                System.out.println(pregunta.getESPrespuesta4());
+                System.out.println(pregunta.getENGrespuesta4());
                 Thread.sleep(MEDIUM_PAUSE);
 
-                if (FileManager.pedirRespuesta(pregunta, Main.teclado, textCyan)) {
+                if (FileManager.nextAnswer(pregunta, Main.teclado, textCyan)) {
                     Dialogue.fuentePresentador();
-                    System.out.println("Respuesta final acertada con exito");
+                    System.out.println("Final answer guess correctly");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Bien hecho");
+                    System.out.println("Well done");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Haces que yo me sienta orgulloso por ejecutarme");
+                    System.out.println("You make me proud for running me");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Y a mi creador por entretenerte");
+                    System.out.println("And my creator for entretaining you");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Sabes? Quiero darte algo");
+                    System.out.println("You know what? I'll give you something");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Como no, en forma de archivo");
+                    System.out.println("Of course, in a file way");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("En que directorio quieres que te guarde el archivo?");
+                    System.out.println("Where do youn want your file?");
                     Thread.sleep(MEDIUM_PAUSE);
-                    FileManager.darPremio(Main.teclado, textCyan);
+                    FileManager.givePrice(Main.teclado, textCyan);
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Pues nada, hasta el proximo programa");
+                    System.out.println("That gets us to the end, until the next one");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Gracias por jugar");
+                    System.out.println("Thanks for playing");
                     Thread.sleep(MEDIUM_PAUSE);
                     return true;
                 }else{
                     archivo.delete();
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Malas noticias");
+                    System.out.println("Bad news");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuenteError();
-                    System.out.println("Usted ha fallado la pregunta");
+                    System.out.println("You have answered wrong");
                     Thread.sleep(MEDIUM_PAUSE);
 
                     Dialogue.fuentePresentador();
-                    System.out.println("Solo necesitabas una mas...");
+                    System.out.println("You only needed one more...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Pues nada");
+                    System.out.println("Well...");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Dile chau a tu archivo");
+                    System.out.println("Say goodbye to your file");
                     Thread.sleep(MEDIUM_PAUSE);
-                    System.out.println("Espero que no fuese nada importante ;)");
+                    System.out.println("I hope it wasnt anything important ;)");
                     Thread.sleep(MEDIUM_PAUSE);
                     return false;
                 }

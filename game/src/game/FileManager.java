@@ -7,9 +7,6 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class FileManager {
-
-
-    //////////////////////////////////////////////////////////////
     
     public static void darPremio(Scanner teclado, String color){
         System.out.print(color);
@@ -244,7 +241,7 @@ public class FileManager {
             }
             else if (archivo.length() < longitudMinima) {
                 Dialogue.fuenteError();
-                System.out.println("the file has to be longer");
+                System.out.println("the file has to be langer");
                 Dialogue.resetColors();
             }
             else if (Main.fechaInicioPrograma < archivo.lastModified()) {
