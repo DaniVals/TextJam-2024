@@ -1,5 +1,5 @@
 # On the edge of the recicle bin
-Mi juego hecho para la game jam https://itch.io/jam/text-jam-1
+My game for the game jam https://itch.io/jam/text-jam-1
 
 ## How to play
 - dowload the 'game' folder
